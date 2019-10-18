@@ -6,8 +6,10 @@ This is sample .net core app. Follow below steps to know how to build/push/run t
 Pre-requisites:
 
 a) Docker Desktop Community running. [Click here to install](https://docs.docker.com/docker-for-windows/install/)
+
 b) Kubernetes should be enabled on Docker Desktop. Follow below link on how to enable kubernetes on docker desktop:
 [Enable Kubernetes on Docker Desktop](https://docs.docker.com/docker-for-windows/#kubernetes)
+
 c) Docker hub account and public repository.
 
 ## build the app
