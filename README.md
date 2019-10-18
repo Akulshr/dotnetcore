@@ -39,11 +39,19 @@ To deploy app on local kubernetes cluster, run below command:
 
 `kubectl apply -f .\deploy.yaml`
 
+To expose public IP address, run below comand:
+
 `kubectl apply -f .\service.yaml`
+
+Note: Since you are running K8s on your local laptop, you can access website on localhost.
 
 Execute below command to verify if pod is up and running
 
 `kubectl get pods`
+
+Execute below commands to verify of service is up and running exposing public IP:
+
+`kubectl get svc`
 
 To see pod deployment description:
 
@@ -51,7 +59,7 @@ To see pod deployment description:
   
 ## Verify app is up and running
 
-Once pod is up and running, trying hittng http://localhost:8080 and you should see your app running.
+Once pods and services are up and running, try hittng http://localhost:8080 and you should see your app running.
 
 
 
