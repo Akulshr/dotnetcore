@@ -37,8 +37,8 @@ e.g.,
 
 To deploy app on local kubernetes cluster, run below command:
 
-`kubectl apply -f .\deploy.yaml
-kubectl apply -f .\service.yaml`
+`kubectl apply -f .\deploy.yaml`
+`kubectl apply -f .\service.yaml`
 
 Execute below command to verify if pod is up and running
 
