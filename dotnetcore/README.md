@@ -12,7 +12,7 @@ b) Kubernetes should be enabled on Docker Desktop. Follow below link on how to e
 
 c) Docker hub account and public repository.
 
-## build the app
+## 1. build the app
 
 `docker build --tag <docker hub repo> -f .\dockerfile .`
 
@@ -20,7 +20,7 @@ e.g.,
 
 `docker build --tag anubhavkul89/demodotnetcore -f .\Dockerfile .`
 
-## push image to docker hub repo
+## 2. push image to docker hub repo
 
 `docker push <docker hub repo>`
 
@@ -28,14 +28,14 @@ e.g.,
 
 `docker push anubhavkul89/demodotnetcore`
 
-## run the app
+## 3. run the app
 `docker run -d -p 8080:80 --name webapp <docker hub repo>`
 
 e.g.,
 
 `docker run -d -p 8080:80 --name webapp anubhavkul89/demodotnetcore`
 
-## run same app on local kubernetes cluster
+## 4. run same app on local kubernetes cluster
 
 To deploy app on local kubernetes cluster, run below command:
 
@@ -59,7 +59,7 @@ To see pod deployment description:
 
 `kubectl describe pods <pod name>`
   
-## Verify app is up and running
+## 5. Verify app is up and running
 
 Once pods and services are up and running, try hittng http://localhost:8080 and you should see your app running.
 
