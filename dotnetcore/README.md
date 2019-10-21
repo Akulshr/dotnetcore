@@ -35,15 +35,18 @@ e.g.,
 
 `docker run -d -p 8080:80 --name webapp anubhavkul89/demodotnetcore`
 
+
 ## 4. run same app on local kubernetes cluster
+
+Before deploying app on K8 cluster, update the docker hub repository path in deploy.yaml file.
 
 To deploy app on local kubernetes cluster, run below command:
 
-`kubectl apply -f .\deploy.yaml`
+`kubectl apply -f .\demodotnetcore\deploy.yaml`
 
 To expose public IP address, run below comand:
 
-`kubectl apply -f .\service.yaml`
+`kubectl apply -f .\demodotnetcore\service.yaml`
 
 Note: Since you are running K8s on your local laptop, you can access website on localhost.
 
@@ -61,7 +64,7 @@ To see pod deployment description:
   
 ## 5. Verify app is up and running
 
-Once pods and services are up and running, try hittng http://localhost:8080 and you should see your app running.
+Once pods and services are up and running, try hittng http://localhost and you should see your app running.
 
 
 
