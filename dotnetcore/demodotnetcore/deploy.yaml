@@ -10,6 +10,7 @@ spec:
         app: dotnetlinux
     spec:
       containers:
+      # adjust image repo to pull from your registry
         - image: "anubhavkul89/demodotnetcore"
           imagePullPolicy: Always
           name: dotnetlinux
